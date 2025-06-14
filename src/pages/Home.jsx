@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "../components/Header.jsx";
+import "../css/style.css";
 
 export function Home() {
   const [posts, setPosts] = useState([]);
@@ -8,7 +9,7 @@ export function Home() {
   const postsPerPage = 10;
 
   const cardColors = [
-    "#dbeafe", // azul muito claro
+    "#dbeafe",
     "#bfdbfe",
     "#93c5fd",
     "#60a5fa",
@@ -42,32 +43,27 @@ export function Home() {
     <>
       <Header />
 
-      <main className="flex flex-col items-center min-h-screen bg-blue-100 px-4 py-10">
+      <main className="main-container">
         
         {posts.length === 0 ? (
-          <div className="text-lg text-blue-600 animate-pulse">Carregando posts...</div>
+          <div className="loading-text">Carregando posts...</div>
         ) : (
           <>
-            <div className="w-full max-w-3xl space-y-6">
+            <div>
               {currentPosts.map((post, index) => {
                 const bgColor = cardColors[index % cardColors.length];
 
                 return (
                   <div
                     key={post.id}
-                    className="rounded-xl shadow-md p-6 border border-blue-300 hover:shadow-lg transition-shadow"
+                    className="post-card"
                     style={{ backgroundColor: bgColor }}
                   >
-                    <h2 className="text-2xl font-semibold mb-2 text-blue-900">
-                      {post.title}
-                    </h2>
-                    <p className="mb-4 text-blue-800">
+                    <h2 className="post-title">{post.title}</h2>
+                    <p className="post-body">
                       {post.body.length > 100 ? post.body.slice(0, 100) + "..." : post.body}
                     </p>
-                    <Link
-                      to={`/post/${post.id}`}
-                      className="inline-block mt-2 px-4 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition"
-                    >
+                    <Link to={`/post/${post.id}`} className="btn">
                       Leia +
                     </Link>
                   </div>
@@ -75,21 +71,21 @@ export function Home() {
               })}
             </div>
 
-            <div className="flex items-center gap-2 mt-10">
+            <div className="pagination">
               <button
                 onClick={handlePrev}
                 disabled={currentPage === 1}
-                className="px-4 py-2 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 disabled:opacity-50 transition"
+                className="btn"
               >
                 Anterior
               </button>
-              <span className="px-4 py-2 bg-white rounded shadow text-blue-900 font-semibold">
+              <span className="page-indicator">
                 Página {currentPage} de {totalPages}
               </span>
               <button
                 onClick={handleNext}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 disabled:opacity-50 transition"
+                className="btn"
               >
                 Próxima
               </button>
