@@ -43,8 +43,7 @@ export function Home() {
       <Header />
 
       <main className="flex flex-col items-center min-h-screen bg-blue-100 px-4 py-10">
-        <h1 className="text-4xl font-bold text-blue-900 mb-10">Blog Azul Claro - Posts de Teste</h1>
-
+        
         {posts.length === 0 ? (
           <div className="text-lg text-blue-600 animate-pulse">Carregando posts...</div>
         ) : (
