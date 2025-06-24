@@ -9,14 +9,14 @@ export function Home() {
   const postsPerPage = 10;
 
   const cardColors = [
-    "#dbeafe",
-    "#bfdbfe",
-    "#93c5fd",
-    "#60a5fa",
-    "#3b82f6",
-    "#2563eb",
-    "#1e40af",
-  ];
+  "#f9fafb", // cinza-100
+  "#f3f4f6", // cinza-200
+  "#e5e7eb", // cinza-300
+  "#d1d5db", // cinza-400
+  "#9ca3af", // cinza-500
+  "#6b7280", // cinza-600
+  "#374151", // cinza-700
+];
 
   useEffect(() => {
     const getPosts = async () => {
