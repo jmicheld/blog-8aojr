@@ -1,43 +1,47 @@
-# Meu Aplicativo React com Tailwind
+# ✨ 8AOJR Blog & Utilities Front-End
 
-Este projeto é uma aplicação React estilizada com Tailwind CSS e construída usando Vite. Ele serve como um modelo para criar aplicações web modernas com foco em desempenho e experiência do desenvolvedor.
+Uma SPA **React + Vite + Tailwind CSS** criada como trabalho de Front-End Engineering da turma **8AOJR / FIAP**.  
+A aplicação combina um _mini-blog_ com vários _widgets_ utilitários (usuário aleatório, números da sorte e palavra do dia) consumindo APIs públicas e um BFF próprio.
 
-## Funcionalidades
+> **Por que este repositório existe?**  
+> Ele demonstra integração de **React Hooks**, **React Router** e **fetch API** com Tailwind CSS, além de boas práticas de estrutura de projeto e _tooling_ moderno.
 
-- React para construção de interfaces de usuário
-- Tailwind CSS para estilização com utilitários
-- Vite para processos rápidos de desenvolvimento e build
+---
 
-## Começando
+## 🎯 Funcionalidades Principais
 
-Para começar com este projeto, siga as instruções abaixo:
+| Módulo | Descrição |
+|--------|-----------|
+| **Lista de Posts** | Consome [`https://jsonplaceholder.typicode.com/posts`](https://jsonplaceholder.typicode.com/posts) e exibe os 100 posts paginados de 10 em 10, com botão **Leia +** para a página de detalhes. :contentReference[oaicite:0]{index=0} |
+| **Detalhe do Post** | Navegação dinâmica (`/post/:id`) trazendo o post selecionado. :contentReference[oaicite:1]{index=1} |
+| **Usuário Aleatório** | Widget que carrega um perfil de [`randomuser.me`](https://randomuser.me) e permite gerar outro usuário com 1 clique. :contentReference[oaicite:2]{index=2} |
+| **Números da Sorte** | Chama a API [`https://api-numeros-da-sorte.onrender.com/random`](https://api-numeros-da-sorte.onrender.com/random) e exibe seis números aleatórios (Mega-Sena style). :contentReference[oaicite:3]{index=3} |
+| **Palavra do Dia** | No _mount_ da aplicação, faz _fetch_ em `https://fiap-bff-8aojr.onrender.com/ask` para mostrar uma palavra/frase motivacional e inclui botão “Nova palavra”. :contentReference[oaicite:4]{index=4} |
+| **Dark UI customizado** | Tailwind é usado via `@import "tailwindcss"` em **src/css/style.css**, que também traz classes personalizadas e animações. :contentReference[oaicite:5]{index=5} |
 
-Vamos criar uma ToDo List utilizando react com Tailwind orientados por IA (Copilot)
+---
 
-Seu repositório deve ser público!
+## 🧩 Stack & Ferramentas
 
-### Como iniciar este exercício
+- **React 19** / **React Router 7** – SPA e rotas dinâmicas  
+- **Vite 6** – _Bundler_ rápido com HMR  
+- **Tailwind CSS 4** – Estilização utilitária + custom CSS  
+- **ESLint 9** – Linting (rule set básico)  
+- **Node ≥ 18** – Requisito mínimo de runtime
 
-Clique com o botão direito em **Copiar Exercício** e abra o link em uma nova aba.
+_Confira as dependências no `package.json`. :contentReference[oaicite:6]{index=6}_
 
-   <a id="copy-exercise" target="_blank" href="https://github.com/new?template_name=react-tailwind-template&template_owner=jaisonschmidt&name=react-tailwind-projectname&owner=%40me&visibility=public">
-      <img src="https://img.shields.io/badge/📠_Copiar_Exercício-008000" height="25pt"/>
-   </a>
+---
 
-### Construindo para Produção
+## 🚀 Instalação & Uso
 
-Para construir a aplicação para produção, execute:
+```bash
+# 1 – clone o repo
+git clone https://github.com/jmicheld/blog-8aojr.git
+cd blog-8aojr
 
-```
-npm run build
-```
+# 2 – instale as dependências
+npm install              # ou pnpm/yarn
 
-Isso criará uma build otimizada da sua aplicação no diretório `dist`.
-
-## Uso
-
-Você pode começar a modificar o arquivo `src/App.jsx` para alterar o componente principal da aplicação. Componentes adicionais podem ser criados no diretório `src/components`.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+# 3 – ambiente de desenvolvimento
+npm run dev              # abre em http://localhost:5173
