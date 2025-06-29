@@ -4,7 +4,7 @@ Uma SPA **React + Vite + Tailwind CSS** criada como trabalho de Front-End Engine
 A aplicação combina um _mini-blog_ com vários _widgets_ utilitários (usuário aleatório, números da sorte e palavra do dia) consumindo APIs públicas e um BFF próprio.
 
 > **Por que este repositório existe?**  
-> Ele demonstra integração de **React Hooks**, **React Router** e **fetch API** com Tailwind CSS, além de boas práticas de estrutura de projeto e _tooling_ moderno.
+> Trabalho para a disciplina de FrontEnd Engineer, ele demonstra integração de **React Hooks**, **React Router** e **fetch API** com Tailwind CSS, além de boas práticas de estrutura de projeto e _tooling_ moderno.
 
 ---
 
