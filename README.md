@@ -33,6 +33,56 @@ _Confira as dependências no `package.json`. :contentReference[oaicite:6]{index=
 
 ---
 
+## 🗂️ Estrutura de Pastas
+
+A estrutura de pastas do projeto foi organizada para manter clareza, modularidade e escalabilidade. Abaixo, você pode ver a hierarquia principal:
+``` bash
+blog-8aojr/
+├── public/ # Arquivos estáticos acessíveis diretamente
+├── src/ # Código-fonte principal
+│ ├── components/ # Componentes reutilizáveis (ex: Header, Footer)
+│ ├── pages/ # Páginas associadas às rotas (Home.jsx, Post.jsx)
+│ ├── css/
+│ │ └── style.css # Estilos globais e configurações do Tailwind
+│ ├── App.jsx # Configuração de rotas e layout principal
+│ └── main.jsx # Ponto de entrada da aplicação React
+├── .gitignore # Arquivos e pastas ignorados pelo Git
+├── eslint.config.js # Regras de linting (ESLint)
+├── tailwind.config.js # Customizações do Tailwind CSS
+├── vite.config.js # Configuração do bundler Vite
+├── package.json # Gerenciamento de dependências e scripts
+└── README.md # Documentação do projeto
+```
+> Esta estrutura segue boas práticas para aplicações React com Vite e Tailwind CSS, facilitando manutenção e colaboração em equipe.
+
+---
+
+## 📜 Licença
+
+Este projeto é licenciado sob a **Licença MIT**.
+
+Você tem permissão para usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do software, desde que mantenha o aviso de direitos autorais original e esta permissão em todas as cópias ou partes substanciais do software.
+
+> O software é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas, incluindo, mas não se limitando a garantias de comercialização, adequação a um propósito específico e não violação.
+
+Consulte o arquivo [`LICENSE`](LICENSE) para o texto completo da licença.
+
+
+---
+
+## 👥 Integrantes do Projeto
+
+Este projeto foi desenvolvido em equipe pelos seguintes alunos da turma **8AOJR** da **FIAP**:
+
+| Nome                           | RM       |
+|--------------------------------|----------|
+| Alexandre Stivanatto Bechelli | 358238   |
+| Jean Michel Deschamps         | 359921   |
+| Oswaldo Gomes Moreira         | 359292   |
+| Victor Garcia de Souza        | 359807   |
+
+---
+
 ## 🚀 Instalação & Uso
 
 ```bash
