@@ -1,11 +1,22 @@
 # ✨ 8AOJR Blog & Utilities Front-End
 
-Uma SPA **React + Vite + Tailwind CSS** criada como trabalho de Front-End Engineering da turma **8AOJR / FIAP**.  
-A aplicação combina um _mini-blog_ com vários _widgets_ utilitários (usuário aleatório, números da sorte e palavra do dia) consumindo APIs públicas e um BFF próprio.
+Este projeto é uma **Single Page Application (SPA)** desenvolvida em **React**, com empacotamento via **Vite** e estilização utilizando **Tailwind CSS**.  
+Foi criado como parte do desafio final da disciplina de **Front-End Engineering** do curso de **Análise e Desenvolvimento de Sistemas** da turma **8AOJR - FIAP**.
 
+A aplicação propõe uma experiência moderna de front-end combinando:
+
+- Um **mini-blog**, com listagem de posts e visualização individual via rotas dinâmicas.
+- Uma série de **utilitários interativos (widgets)** que consomem APIs públicas e fornecem:
+  - Geração de **usuários aleatórios**;
+  - Sorteio de **números da sorte**;
+  - Exibição de uma **palavra do dia** com botão de atualização.
+
+Além da parte visual, o projeto destaca-se por integrar tecnologias modernas do ecossistema React, boas práticas de componentização e consumo assíncrono de dados, servindo como uma base sólida para aplicações maiores ou projetos de portfólio.
+
+> O código é limpo, modular e 100% client-side, podendo ser facilmente hospedado em plataformas como GitHub Pages, Vercel ou Netlify.
 > **Por que este repositório existe?**  
-> Ele demonstra integração de **React Hooks**, **React Router** e **fetch API** com Tailwind CSS, além de boas práticas de estrutura de projeto e _tooling_ moderno.
-
+> Trabalho para a disciplina de FrontEnd Engineer, ele demonstra integração de **React Hooks**, **React Router** e **fetch API** com Tailwind CSS, além de boas práticas de estrutura de projeto e _tooling_ moderno.
+> 
 ---
 
 ## 🎯 Funcionalidades Principais
