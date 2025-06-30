@@ -1,7 +1,7 @@
 # ✨ 8AOJR Blog & Utilities Front-End
 
 Este projeto é uma **Single Page Application (SPA)** desenvolvida em **React**, com empacotamento via **Vite** e estilização utilizando **Tailwind CSS**.  
-Foi criado como parte do desafio final da disciplina de **Front-End Engineering** do curso de **Análise e Desenvolvimento de Sistemas** da turma **8AOJR - FIAP**.
+Foi criado como parte do desafio final da disciplina de **Front-End Engineering** do curso de **Engenharia de Software** da turma **8AOJR - FIAP**.
 
 A aplicação propõe uma experiência moderna de front-end combinando:
 
